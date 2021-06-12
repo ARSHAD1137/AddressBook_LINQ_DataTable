@@ -9,7 +9,7 @@ namespace AddressBook_LINQ
 {
     class Linq_DataTable
     {
-        public void AddToDataTableDemo()
+        public DataTable AddToDataTableDemo()
         {
             DataTable table = new DataTable();
             table.Columns.Add("FirstName", typeof(string));
@@ -21,6 +21,12 @@ namespace AddressBook_LINQ
             table.Columns.Add("PhoneNumber", typeof(int));
             table.Columns.Add("Email", typeof(string));
 
+            table.Rows.Add("Rakesh", "Singh", "Hill Tower", "Mumbai", "Maharashtra", 414141, 9199199191, "rakesh@gmail.com");
+            table.Rows.Add("Rahul", "Roy", "Street 20", "Mumbai", "Maharashtra", 411114, 9191919191, "rahul@outlook.com");
+            table.Rows.Add("Akshay", "Singhal", "Lower street", "Pune", "Maharashtra", 414144, 8188181818, "akshay@gmail.com");
+            table.Rows.Add("Nitin", "Bansal", "Street 49", "Noida", "Delhi", 411311, 818181818, "nitin@hotmail.com");
+
+            return table;
         }
 
     }
