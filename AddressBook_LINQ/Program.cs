@@ -12,8 +12,7 @@ namespace AddressBook_LINQ
         {
             Console.WriteLine("Welcom to Address Book");
             Linq_DataTable linqToDataTable = new Linq_DataTable();
-            Linq_DataTable.AddToDataTableDemo();
-            Linq_DataTable.DisplayAddressBook();
+            linqToDataTable.AddToDataTableDemo();
             Console.ReadKey();
         }
     }

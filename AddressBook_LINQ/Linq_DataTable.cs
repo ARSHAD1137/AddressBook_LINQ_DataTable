@@ -25,8 +25,8 @@ namespace AddressBook_LINQ
             table.Rows.Add("Rahul", "Roy", "Street 20", "Mumbai", "Maharashtra", 411114, 9191919191, "rahul@outlook.com");
             table.Rows.Add("Akshay", "Singhal", "Lower street", "Pune", "Maharashtra", 414144, 8188181818, "akshay@gmail.com");
             table.Rows.Add("Nitin", "Bansal", "Street 49", "Noida", "Delhi", 411311, 818181818, "nitin@hotmail.com");
-            DisplayAddressBook(table);
 
+            DisplayAddressBook(table);
         }
         public void DisplayAddressBook(DataTable table)
         {
