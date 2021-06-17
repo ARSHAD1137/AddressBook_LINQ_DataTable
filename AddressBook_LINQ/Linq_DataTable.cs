@@ -37,5 +37,15 @@ namespace AddressBook_LINQ
                 + " " + "Zip:" + contact.Field<int>("Zip") + " " + "Phone Number:" + contact.Field<int>("PhoneNumber") + " " + "Email:" + contact.Field<string>("Email") + " ");
             }
         }
+        public void EditContact(DataTable table)
+        {
+            var Edit = table.AsEnumerable().Where(a => a.Field<string>("FirstName") == "Rakesh");
+            var Edit1 = from Name in table.AsEnumerable() where Name.Field<string>("FirstName").Equals("Rakesh");
+            foreach(var edit in Edit)
+            {
+                edit.SetField("City", "Noida");
+                edit.SetField("State", "Delhi");
+            }
+        }
     }
 }
